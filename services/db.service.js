@@ -49,6 +49,7 @@ module.exports = {
           throw Error("There is no active database instance to disconnect from.");
         }
 
+        console.log(dbInstance);
         await dbInstance.close();
 
         resolve()
